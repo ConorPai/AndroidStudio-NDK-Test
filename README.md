@@ -8,3 +8,6 @@
 3.支持通过修改CMakeLists.txt文件创建多个so库
 
 4.jni支持调用其它so库，并且可以调试
+
+## 演示视频：
+[演示视频](http://v.youku.com/v_show/id_XMjc5OTM0NTA3Mg==.html?spm=a2h3j.8428770.3416059.1)
