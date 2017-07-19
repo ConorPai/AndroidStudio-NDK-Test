@@ -12,5 +12,10 @@ public:
     int Add(int a, int b);
 };
 
+extern "C" int testAdd(int a, int b)
+{
+    return a + b;
+}
+
 
 #endif //TESTNDK_TESTADD_H
