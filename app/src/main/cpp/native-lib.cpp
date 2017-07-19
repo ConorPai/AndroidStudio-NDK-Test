@@ -14,8 +14,7 @@ Java_com_example_paiconor_testndk_MainActivity_testAdd(JNIEnv *env, jobject inst
     if(sohandle != NULL)
     {
         typedef int (*CAC_FUNC)(int, int);
-        CAC_FUNC cac_func = NULL;
-        *(void **) (&cac_func) = dlsym(sohandle, "testAdd");
+        CAC_FUNC cac_func = (CAC_FUNC)dlsym(sohandle, "testAdd");
         if( cac_func )
         {
             nResult = cac_func(a, b);
